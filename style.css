@@ -1,0 +1,221 @@
+
+/*
+Theme Name: Caacupe Web
+Theme URI: https://wordpress.org/themes/caacupeweb/
+Author: Matias Baez
+Author URI: http://www.caacupeweb.com/
+Description: Template relacionado con el turismo 
+Version: 1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: blue, white, yellow, light, left-sidebar, responsive-layout, threaded-comments, translation-ready
+Text Domain: CaacupeWeb
+*/
+
+
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	background: #fff;
+	font-family: sans-serif;
+	background-image: url("images/Basilica-Caacupe.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.contenedor {
+	width: 100%;
+	max-width: 1980px;
+}
+
+header {
+	color: #fff;
+}
+
+header a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.cont-image {
+	width: 100%;
+	height: 250px;
+}
+
+/* Logo */
+header .logo {
+	z-index: 10;
+	position: fixed;
+	top: 20px;
+}
+
+header .logo img {
+	width: 50%;
+}
+
+/* Encabezado */
+.logo-encabezado {
+	background: #00171f;
+	font-size: 18px;
+}
+
+.encabezado {
+	padding: 0.5em;
+}
+
+.encabezado span {
+	display: inline-block;
+}
+
+.encabezado .icon-facebook3, .icon-twitter3, .icon-googleplus4 {
+	background: #fff;
+	border-radius: 60%;
+	font-size: 22px;
+}
+
+.encabezado .icon-facebook3 {
+	color: #475993;
+}
+
+.encabezado .icon-twitter3 {
+	color: #76A9EA;
+}
+
+.encabezado .icon-googleplus4 {
+	color: #F34A38;
+}
+
+/* Menu */
+.menu {
+	background: #003459;
+}
+
+.menu .icon-menu2 {
+	display: none;
+	padding: 1em;
+}
+
+.menu-items a {
+	display: inline-block;
+	padding: 1em;
+}
+
+.menu-items a:hover {
+	border-bottom: 4px solid #ff9f1c;
+	padding-bottom: 0.7em;
+	/*background: #1E5D8B;*/
+}
+
+
+.main {
+	background: #efefef;
+}
+
+/* Articulos */
+.article {
+	margin-top: 30px;
+	margin-bottom: 50px;
+}
+
+.main-title .title {
+	margin-top: 20px;
+	padding: 10px;
+	font-family: 'Fjalla One', sans-serif;
+	color: #2E3436;
+}
+
+.main-title .title:before, .title:after {
+	content: "";
+	position: relative;
+	border-bottom: 1px solid #888A85;
+	padding-left: 2rem;
+	padding-right: 2rem;
+	width: 1em;
+	top: -15px;
+	margin: 0.5em;
+}
+
+.article img {
+	width: 100%;
+	height: 230px;
+}
+
+.info-article {
+	background: #fff;
+	padding: 1em;
+	height: 370px;
+}
+
+.info-adress, .info-price, .info-description {
+	margin: 5px;
+	padding: 10px 0;
+	border-bottom: 1px solid #333;
+}
+
+.info-description {
+	text-align: center;
+}
+
+.info-read-more {
+	margin: 30px 0 10px 0;
+}
+
+.info-read-more a {
+	padding: 10px;
+	background: #003459;
+	color: #fff;
+	border-radius: 15px;
+	text-align: center;
+}
+
+.info-read-more a:hover {
+	background: #00171f;
+}
+
+/* Mas Contenido */
+.mas-contenido {
+	width: 100%;
+	height: 320px;
+	background: #fff;
+}
+
+/* Footer */
+.footer {
+	background: #00171f;
+}
+
+.copyright {
+	color: #fff;
+	padding: 15px;
+	border-bottom: 1px solid #00171f;
+}
+
+/*-- media query --*/
+@media screen and (max-width: 480px) {
+	header .logo img {
+		width: 90%;
+	}
+
+	.menu-items {
+		display: none;
+	}
+
+	.menu-items a {
+		display: block;
+		border-bottom: 1px solid #00171f;
+	}
+
+	.menu .icon-menu2 {
+		display: block;
+		border-bottom: 1px solid #00171f;
+	}
+}
