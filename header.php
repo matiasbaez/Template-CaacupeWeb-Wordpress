@@ -7,9 +7,6 @@
 		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 		<link rel="shortcut icon" href="<?php bloginfo('template_url'); ?>/images/icon-web.png">
 		<link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet"> 
-		<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/flexboxgrid.min.css">
-		<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/fonts.css">
-		<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
 		<?php wp_head(); ?>
 	</head>
 
@@ -41,12 +38,18 @@
 					<div class="row">
 						<div class="col-xs-12 center-xs">
 							<a href="#" class="icon-menu2 end-xs" id="mov-menu">    Menu</a>
-							<nav class="menu-items col-xs" id="nav-menu">
-								<a href="#">Guia Practica</a>
-								<a href="#">Servicios</a>
-								<a href="#">Hospedajes</a>
-								<a href="#">Contacto</a>
-							</nav>
+
+							<?php 
+								wp_nav_menu(
+									array (
+										'theme_location' => 'principal',
+										'container' => 'nav',
+										'container_class' => 'menu-items col-xs',
+										'container_id' => 'nav-menu'
+									)
+								);
+							?>
+
 						</div>
 					</div>
 				</div>

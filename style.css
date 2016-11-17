@@ -104,9 +104,37 @@ header .logo img {
 	padding: 1em;
 }
 
-.menu-items a {
+.menu-items ul {
+	list-style: none;
+}
+
+.menu-items ul li {
 	display: inline-block;
 	padding: 1em;
+}
+
+.menu-items ul li a {
+	padding: 1em;
+}
+
+.menu-items ul li > ul {
+	position: absolute;
+	display: none;
+}
+
+.menu-items ul li > ul li {
+	position: relative;
+	display: block;
+	background: #003459;
+	top: 14px;
+}
+
+.menu-items ul li > ul li a {
+	padding: 1em;
+}
+
+.menu-items ul li:hover > ul {
+	display: block;
 }
 
 .menu-items a:hover {
@@ -155,10 +183,11 @@ header .logo img {
 	height: 370px;
 }
 
-.info-adress, .info-price, .info-description {
+.info-article p {
 	margin: 5px;
 	padding: 10px 0;
 	border-bottom: 1px solid #333;
+	text-align: left;
 }
 
 .info-description {
