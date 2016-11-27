@@ -40,7 +40,7 @@
 				<?php wp_reset_query() ?>
 
 				<div class="widgets col-xs-12 col-md-3">
-					<div class="widget between-xs">
+					<div class="widget center-xs">
 					<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Entradas Recientes') ) : endif ?>
 					</div>
 				</div>

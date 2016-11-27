@@ -1,7 +1,11 @@
 
 $(document).ready(function() {
 	$("#mov-menu").click(function() {
-		$("#nav-menu").toggle(500);
+		$("#nav-menu").slideToggle(500);
+	});
+
+	$('.menu-item-has-children').click(function() {
+		$(".sub-menu").slideToggle(500);
 	});
 
 	$(window).scroll(function(){

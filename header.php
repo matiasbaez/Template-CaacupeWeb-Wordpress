@@ -37,7 +37,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-xs-12 center-xs">
-							<a href="#" class="icon-menu2 end-xs" id="mov-menu">    Menu</a>
+							<a href="#" class="mov-menu icon-menu2 end-xs" id="mov-menu">Menu</a>
 
 							<?php 
 								wp_nav_menu(

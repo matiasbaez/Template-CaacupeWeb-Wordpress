@@ -29,7 +29,7 @@ body {
 
 .contenedor {
 	width: 100%;
-	max-width: 1280px;
+	max-width: 1980px;
 	overflow: hidden;
 }
 
@@ -90,59 +90,43 @@ header .logo img {
 	color: #F34A38;
 }
 
+.main {
+	background: #F3F3F3;
+}
+
 /* Menu */
 .menu {
+	width: 100%;
 	background: #003459;
+	z-index: 100;
 }
 
-.menu .icon-menu2 {
+.menu .mov-menu {
 	display: none;
-	padding: 1em;
-}
-
-.menu-items ul {
-	list-style: none;
 }
 
 .menu-items ul li {
 	display: inline-block;
-	padding: 1em;
 }
 
 .menu-items ul li a {
+	display: block;
 	padding: 1em;
+}
+
+.menu-items ul li a:hover {
+	background: #00171f;
 }
 
 .menu-items ul li > ul {
-	position: absolute;
 	display: none;
-	z-index: 100;
+	position: absolute;
+	z-index: 20;
+	background: #003459;
 }
 
 .menu-items ul li > ul li {
-	position: relative;
 	display: block;
-	background: #003459;
-	top: 14px;
-}
-
-.menu-items ul li > ul li a {
-	padding: 1em;
-}
-
-.menu-items ul li:hover > ul {
-	display: block;
-}
-
-.menu-items a:hover {
-	border-bottom: 4px solid #ff9f1c;
-	padding-bottom: 0.7em;
-	/*background: #1E5D8B;*/
-}
-
-
-.main {
-	background: #F3F3F3;
 }
 
 /* Articulos */
@@ -256,6 +240,7 @@ header .logo img {
 
 .single-article .article-thumb img {
 	width: 100%;
+	padding: 0 1.4em 0 0.5em;
 }
 
 .single-article .article-content {
@@ -279,10 +264,16 @@ header .logo img {
 
 .widget {
 	width: 100%;
+	padding: 1em;
 }
 
 .widget h2 {
 	color: #888A85;
+	margin: 10px 0;
+}
+
+.widget li {
+	padding: 0;
 	margin: 20px 0;
 }
 
@@ -306,29 +297,41 @@ header .logo img {
 		width: 90%;
 	}
 
+	.menu {
+		width: 100%;
+		background: #003459;
+	}
+
+	.menu .mov-menu {
+		display: block;
+		width: 100%;
+		padding: 1em;
+	}
+
 	.menu-items {
 		display: none;
 	}
 
-	.menu-items ul li {
+	.menu ul li {
 		display: block;
-		border-bottom: 1px solid #00171f;
-	}
-
-	.menu-items ul li > ul {
-		display: none;
-		position: static;
 		width: 100%;
 	}
 
-	.menu .icon-menu2 {
+	.menu ul li a {
 		display: block;
-		border-bottom: 1px solid #00171f;
+		width: 100%;
+		padding: 1em;
+		background: #003459;
+		border-top: 1px solid #00171f;
 	}
 
-	.widget li {
-		display: inline-block;
-		margin: auto;
-		width: 40%;
+	.menu ul li a:hover {
+		background: #00171f;
+	}
+
+	.menu ul li > ul {
+		display: none;
+		width: 100%;
+		position: relative;
 	}
 }
