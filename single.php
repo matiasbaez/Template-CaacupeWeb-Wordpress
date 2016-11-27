@@ -12,7 +12,7 @@
 
 				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 				
-				<div class="single-article col-xs-12 col-md-9">
+				<div class="single-article col-xs-12 col-md-8">
 
 					<div class="article-thumb">
 						<?php if ( has_post_thumbnail() ) {	the_post_thumbnail('vista-lectura-entrada'); } ?>
@@ -26,6 +26,10 @@
 						<?php the_content(); ?>
 					</div>
 
+					<div class="comments col-xs-12">
+						<h3>Dejanos tu comentario</h3>
+						<?php comments_template(); ?>
+					</div>
 
 				</div>
 

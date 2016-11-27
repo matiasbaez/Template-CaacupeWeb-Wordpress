@@ -1,12 +1,11 @@
-
-<?php 
+<?php
 	//Creo el archivo de funciones
 
 
 	// Registro el menu para poder usar
 	register_nav_menus( 
 		array(
-			'principal' => 'Menu Principal', // La ubicacion y el nombre del menu
+			'principal' => 'Menu CaacupeWeb', // La ubicacion y el nombre del menu
 			'footer' => 'Menu Footer'
 		)
 	);
@@ -18,18 +17,18 @@
 		register_sidebar( // Registro un sidebar | Ahora ago asi porque voy a usar varios 
 
 			array(
-				'name'          => 'Entradas Recientes Footer', // El nombre del sidebar
-				'before_title'  => '<header><h2>',
-				'after_title'   => '</h2></header>'
+				'name'          => 'Entradas Recientes', // El nombre del sidebar
+				'before_title'  => '<h2>',
+				'after_title'   => '</h2>'
 				// Y dejo solo lo que voy a usar
 			)
 		);
 
 		register_sidebar(
 			array(
-				'name' => 'Ultimas Categorias Footer',
-				'before_title'  => '<header><h2>',
-				'after_title'   => '</h2></header>'
+				'name' => 'Ultimas Categorias',
+				'before_title'  => '<h2>',
+				'after_title'   => '</h2>'
 			)
 		);
 	}
@@ -42,7 +41,7 @@
 		// Agrego un tamaño de imagen de acuerdo al que quiero usar
 		add_image_size('vista-previa-entrada', 270, 250, true); // Nombre, ancho, alto, recortado?;
 		add_image_size('vista-lectura-entrada', 783, 290, true);
-		add_image_size('miniatura-blog', 580, 272, true);
+		add_image_size('miniatura-categoria', 580, 272, true);
 	}
 
 

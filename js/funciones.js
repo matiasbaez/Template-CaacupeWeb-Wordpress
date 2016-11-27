@@ -5,7 +5,7 @@ $(document).ready(function() {
 	});
 
 	$(window).scroll(function(){
-		if( $(this).scrollTop() > 40 ){
+		if( $(this).scrollTop() > 25 ){
 			$("#page-logo").slideUp(500);
 		} else {
 			$("#page-logo").slideDown(500);

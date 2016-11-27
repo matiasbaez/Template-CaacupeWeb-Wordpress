@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html <?php language_attributes(); ?> >
+<html <?php language_attributes(); ?>>
 
 	<head>
 		<meta charset="UTF-8">
 		<title>Caacup&eacute; WEB</title>
 		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 		<link rel="shortcut icon" href="<?php bloginfo('template_url'); ?>/images/icon-web.png">
-		<link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">  
 		<?php wp_head(); ?>
 	</head>
 

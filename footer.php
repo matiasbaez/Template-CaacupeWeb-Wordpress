@@ -7,7 +7,7 @@
 					<div class="col-xs-3">
 					</div>
 					<div class="col-xs-3"></div>
-					<div class="col-xs-12 copyright">Todos los derechos reservados - &copy; Caacup&eacute; Web 2016</div>
+					<div class="col-xs-12 copyright">Todos los derechos reservados - &copy; Caacup&eacute; Web 2016 - Design By: Matias Baez</div>
 				</div>
 			</div>
 		</div>
