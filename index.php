@@ -49,7 +49,7 @@ get_header(); ?>
 
 						<div class="info-article">
 							<h4 class="info-title center-xs"><?php the_title(); ?></h4>
-							<?php the_excerpt(); ?>
+							<?php //the_excerpt(); ?>
 
 							<div class="info-read-more col-xs between-xs"><a href="<?php the_permalink(); ?>">Leer Mas</a></div>
 						</div>
@@ -115,7 +115,7 @@ get_header(); ?>
 
 						<div class="info-article">
 							<h4 class="info-title center-xs"><?php the_title(); ?></h4>
-							<?php the_excerpt(); ?>
+							<?php //the_excerpt(); ?>
 
 							<div class="info-read-more col-xs between-xs"><a href="<?php the_permalink(); ?>">Leer Mas</a></div>
 						</div>

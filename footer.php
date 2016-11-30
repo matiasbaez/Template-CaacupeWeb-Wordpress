@@ -15,6 +15,21 @@
 
 	</div> <!-- FIN CONTENEDOR -->
 
+		<script>
+		(function trackLink(url,event) {
+		    event.preventDefault();
+		    if (window.ga && ga.loaded) {
+		         ga('send', 'event', 'outbound', 'click', url, {
+		         'transport': 'beacon',
+		         'hitCallback': function() { document.location = url; }
+		       });
+		    } else {
+		        document.location = url;
+		    }
+		});
+		</script>
+		<?php include_once("analyticstracking.php") ?>
+
 		<?php wp_footer(); ?>
 	</body>
 </html>

@@ -29,7 +29,7 @@
 			</div>
 
 			<div class="logo col-xs-4 center-xs start-xs" id="page-logo">
-				<img src="<?php bloginfo('template_url'); ?>/images/imagen-logo.png" alt="">
+				<a href="http://www.caacupeweb.com" onclick="trackLink('http://www.caacupeweb.com', event);"><img src="<?php bloginfo('template_url'); ?>/images/imagen-logo.png" alt="CaacupeWeb"></a>
 			</div>
 
 						<!-- MENU -->
