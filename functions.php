@@ -46,6 +46,7 @@
 
 
 	function recursos_del_tema() {
+		wp_enqueue_style( 'estilos', get_stylesheet_directory_uri().'/css/estilos.css');
 		wp_enqueue_style( 'flexboxgrid', get_stylesheet_directory_uri().'/css/flexboxgrid.min.css');
 		wp_enqueue_style( 'fonts', get_stylesheet_directory_uri().'/css/fonts.css');
 		wp_enqueue_style( 'style', get_stylesheet_uri());

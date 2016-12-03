@@ -1,6 +1,7 @@
-<?php get_header(); ?>
+<?php /* Template Name: Misas */ 
+	get_header(); ?>
 
-	<!-- MAIN -->
+<!-- MAIN -->
 	<div class="main-single">
 		<div class="container">
 			
@@ -39,7 +40,7 @@
 											
 				<?php wp_reset_query() ?>
 
-				<div class="roe widgets col-xs-12 col-md-3">
+				<div class="widgets col-xs-12 col-md-3">
 					<div class="widget center-xs">
 					<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Entradas Recientes') ) : endif ?>
 					</div>

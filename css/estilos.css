@@ -1,0 +1,65 @@
+
+/* PLANTILLAS STYLES */
+
+
+/* MISAS */
+
+.cont-tema-dia {
+	display: block;
+	padding: 1em;
+	width: 100%;
+	border: 1px solid #F3F3F3;
+	margin: 50px 0;
+	border-radius: 10px;
+}
+
+.date {
+	display: block;
+	border-radius: 40%;
+	background: #FBEE82;
+	color: #FFF;
+	padding: 1.5em;
+	text-align: center;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.tema p {
+	background: #FBEE82;
+	padding: 1em;
+	text-align: center;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.fecha-texto {
+	display: block;
+	width: 100%;
+	padding: 1em;
+	font-size: 18px;
+}
+
+.fecha-texto p {
+	padding: 0.3em;
+	margin: 0;
+}
+
+.fecha-texto .misa:hover {
+	background: #f3f3f3;
+}
+
+.fecha-texto .misa {
+	border-top: 1px solid #F3F3F3;
+}
+
+@media screen and (max-width: 1080px) {
+	.date {
+		display: block;
+		color: #FBEE82;
+		background: #fff;
+		font-size: 24px;
+		padding: 0;
+		text-align: center;
+		width: 100%;
+	}
+}
