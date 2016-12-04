@@ -1,4 +1,4 @@
-<?php /* Template Name: Misas */ 
+<?php /* Template Name: Octavario */ 
 	get_header(); ?>
 
 <!-- MAIN -->
@@ -20,7 +20,7 @@
 					</div>
 					
 					<div class="title">
-						<h2><?php //the_title(); ?></h2>
+						<h2><?php the_title(); ?></h2>
 					</div>
 					
 					<div class="article-content">

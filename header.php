@@ -8,6 +8,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="shortcut icon" href="<?php bloginfo('template_url'); ?>/images/icon-web.png">
 		<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">  
+		<link href="https://fonts.googleapis.com/css?family=Aref+Ruqaa" rel="stylesheet"> 
 		<?php wp_head(); ?>
 	</head>
 

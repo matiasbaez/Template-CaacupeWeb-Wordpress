@@ -118,14 +118,22 @@ header .logo img {
 	background: #00171f;
 }
 
-.menu-items ul li > ul {
+.menu-items ul li > ul li {
+	display: block;
+}
+
+.menu-items ul li > ul li {
+	display: block;
+}
+
+.menu-items .sub-menu {
 	display: none;
 	position: absolute;
 	z-index: 20;
 	background: #003459;
 }
 
-.menu-items ul li > ul li {
+.menu-items li:hover > ul {
 	display: block;
 }
 
@@ -301,6 +309,8 @@ header .logo img {
 		width: 70%;
 		margin: auto;
 	}
+
+
 }
 
 
@@ -322,14 +332,14 @@ header .logo img {
 
 	.menu-items {
 		display: none;
+		padding: 0;
 	}
 
-	.menu ul li {
+	.menu .menu-item {
 		display: block;
-		width: 100%;
 	}
 
-	.menu ul li a {
+	.menu .menu-item a {
 		display: block;
 		width: 100%;
 		padding: 1em;
@@ -342,14 +352,19 @@ header .logo img {
 	}
 
 	.menu ul li > ul {
-		display: none;
+		display: block;
 		width: 100%;
 		position: relative;
 	}
 
+	.menu .menu-item .sub-menu li {
+		background: red;
+		display: block;
+	}
+
 	.widget li ul li a {
 		display: block;
-		width: 90%;
+		width: 100%;
 	}
 }
 

@@ -5,7 +5,7 @@ $(document).ready(function() {
 	});
 
 	$('.menu-item-has-children').click(function() {
-		$(".sub-menu").slideToggle(500);
+		$(".sub-menu > li").slideToggle(500);
 	});
 
 	$(window).scroll(function(){
