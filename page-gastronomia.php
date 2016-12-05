@@ -1,4 +1,5 @@
-<?php get_header(); ?>
+<?php /* Template Name: Gastronomia */ 
+get_header(); ?>
 
 	<!-- MAIN -->
 	<div class="main-single">
@@ -19,7 +20,8 @@
 					</div>
 					
 					<div class="title">
-						<h2><?php the_title(); ?></h2>
+						<h2 class="col-xs-12"><?php the_title(); ?></h2>
+						<span class="icon-spoon-knife"></span>
 					</div>
 					
 					<div class="article-content">

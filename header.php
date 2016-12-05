@@ -22,9 +22,9 @@
 					<div class="row middle-xs between-xs">
 						<div class="encabezado col-xs end-xs">
 							<span>Seguinos en: </span>
-							<span><a href="http://www.facebook.com/caacupeweb" class="icon-facebook3" target="_blank"></a></span>
-							<span ><a href="http://www.twitter.com/caacupe_web" class="icon-twitter3" target="_blank"></a></span>
-						 	<span><a href="http://www.plus.google.com/" class="icon-googleplus4" target="_blank"></a></span>
+							<span><a href="http://www.facebook.com/caacupeweb" class="icon-facebook-with-circle" target="_blank"></a></span>
+							<span ><a href="http://www.twitter.com/caacupe_web" class=" icon-twitter-with-circle" target="_blank"></a></span>
+						 	<span><a href="http://www.plus.google.com/" class="icon-google-plus3" target="_blank"></a></span>
 						</div>
 					</div>
 				</div>

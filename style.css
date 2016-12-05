@@ -72,21 +72,21 @@ header .logo img {
 	display: inline-block;
 }
 
-.encabezado .icon-facebook3, .icon-twitter3, .icon-googleplus4 {
+.encabezado .icon-facebook-with-circle, .icon-twitter-with-circle, .icon-google-plus3 {
 	background: #fff;
 	border-radius: 60%;
 	font-size: 22px;
 }
 
-.encabezado .icon-facebook3 {
+.encabezado .icon-facebook-with-circle {
 	color: #475993;
 }
 
-.encabezado .icon-twitter3 {
+.encabezado .icon-twitter-with-circle {
 	color: #76A9EA;
 }
 
-.encabezado .icon-googleplus4 {
+.encabezado .icon-google-plus3 {
 	color: #F34A38;
 }
 
@@ -294,6 +294,29 @@ header .logo img {
 
 .widget li ul li a:hover {
 	background: #F3F3F3;
+}
+
+/* CALENDAR */
+.calendar_wrap table {
+	width: 100%;
+}
+
+.calendar_wrap table caption {
+	padding: 0.5em;
+	width: 100%;
+	-webkit-text-transform: uppercase;
+	-moz-text-transform: uppercase;
+	-ms-text-transform: uppercase;
+	-o-text-transform: uppercase;
+	text-transform: uppercase;
+}
+
+.calendar_wrap table, th, tr, td {
+	border: 1px solid #F3F3F3;
+}
+
+.calendar_wrap table tr td, th {
+	padding: 0.5em;
 }
 
 /* PAGE STYLES */

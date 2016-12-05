@@ -31,6 +31,22 @@
 				'after_title'   => '</h2>'
 			)
 		);
+
+		register_sidebar(
+			array(
+				'name' => 'Facebook',
+				'before_title'  => '<h2>',
+				'after_title'   => '</h2>'
+			)
+		);
+
+		register_sidebar(
+			array(
+				'name' => 'Twitter',
+				'before_title'  => '<h2>',
+				'after_title'   => '</h2>'
+			)
+		);
 	}
 
 	// Activo el soporte para las imagenes de las ENTRADAS O PUBLICACIONES
