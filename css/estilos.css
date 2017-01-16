@@ -130,6 +130,7 @@ h1, h2, h3 {
 	color: #FFF;
 	background: #4E9A06;
 	border-radius: 50%;
+	display: inline-block;
 	font-size: 28px;
 }
 

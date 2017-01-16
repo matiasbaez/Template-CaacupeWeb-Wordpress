@@ -17,15 +17,74 @@ get_header(); ?>
 		<!-- MAIN -->
 		<div class="main">
 			<div class="container">
+
+				<!-- SECCION NOTICIAS -->
 				<div class="row center-xs">
+
+					<div class="main-title col-xs-12">
+						<h2 class="title">NOTICIAS</h2>
+						<span></span>
+					</div>
+
+					<?php  
+
+						query_posts(
+							array(
+								'showposts' => 4,
+								'cat' => 9
+							)
+						);
+
+					?>
 					
-					<!-- PRIMERA CATEGORIA -->
+					<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+					<div class="noticias col-xs-10 col-sm-5 col-md-2 between-xs">
+
+
+						<div class="noticia-thumb">
+							<?php if ( has_post_thumbnail() ) {	the_post_thumbnail('vista-previa-entrada'); } ?>
+						</div>
+
+
+						<div class="info-noticia">
+							<h4 class="info-title center-xs"><?php the_title(); ?></h4>
+							<?php //the_excerpt(); ?>
+
+							<div class="info-read-more col-xs between-xs"><a href="<?php the_permalink(); ?>">Leer Mas</a></div>
+						</div>
+					</div>
+						<?php endwhile; ?>
+
+						<?php else: ?>
+													
+							<h3>No se encontro nada para mostrar</h3>
+
+						<?php endif; ?>
+											
+						<?php wp_reset_query(); ?>
+					
+					<div class="noticia-footer col-xs-12">
+						<?php // Adquiero el id de la categoria
+    						$categoria_id = get_cat_ID( 'Noticias' );
+
+    						// Adquiero la URL de la categoria
+    						$categoria_link = get_category_link( $categoria_id ); 
+    					?>
+						<h3 class="VerTodos">
+							<a href="<?php echo esc_url( $categoria_link ); ?>">Ver todas las Noticias</a>
+						</h3>
+					</div>
+
+				</div>
+
+				
+				<!-- PRIMERA CATEGORIA -->
+				<div class="row center-xs">	
 
 					<div class="main-title col-xs-12">
 						<h2 class="title">POSADAS</h2>
 						<span></span>
 					</div>
-
 
 					<?php  
 

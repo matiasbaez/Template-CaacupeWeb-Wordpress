@@ -4,9 +4,9 @@ $(document).ready(function() {
 		$("#nav-menu").slideToggle(500);
 	});
 
-	$('.menu-item-has-children').click(function() {
-		$(".sub-menu > li").slideToggle(500);
-	});
+	// $('.menu-item-has-children').click(function() {
+	// 	$(".sub-menu > li").slideToggle(500);
+	// });
 
 	$(window).scroll(function(){
 		if( $(this).scrollTop() > 25 ){
